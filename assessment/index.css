@@ -13,15 +13,27 @@ body>div {
   margin: 1rem;
 }
 
-h1 {
+.title {
   color: #ffffff;
   text-align: center;
 }
 
-#grid-container {
-  background-color: #EF8354;
-}
-
 #flex-container {
   background-color: #BFC0C0;
+  display: flex;
+}
+
+#flex-container div {
+  text-align: center;
+  flex: 1;
+}
+
+#grid-container {
+  background-color: #EF8354;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#grid-container div {
+  text-align: center;
 }
