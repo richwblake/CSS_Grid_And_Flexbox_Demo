@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 10vh 15vh 20vh 55vh;
+    grid-template-columns: 10vw 15vw 30vw 45vw;
+    /* row-gap: 20px; */
+    /* column-gap: 30px; */
+    /* gap: 10px 20px; */
+    /* gap: 20px; */
+}
+
+#row-one-column-one{
+    background-color: hsl(30, 50%, 50%);
+
+    grid-row: 1;
+    /* ^^ Shorthand version of syntax written below */
+    /* grid-row-start: 1;
+    grid-row-end: 2; */
+
+    grid-column: 1;
+    /* ^^ Shorthand version of syntax below */
+    /* grid-column-start: 1;
+       grid-column-end: 2; */
+}
+
+#row-one-column-two{
+    background-color: hsl(70, 50%, 50%);
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#row-one-column-three{
+    background-color: hsl(100, 50%, 50%);
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#row-one-column-four {
+    background-color: hsl(120, 50%, 30%)
+}
+
+#row-two-column-one{
+    background-color: hsl(10, 50%, 50%);
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#row-three-column-one{
+    background-color: hsl(350, 50%, 70%);
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#row-four-column-one {
+    background-color: hsl(320, 50%, 50%);
+    grid-row: 4;
+    grid-column: 1;
+}
+
+#row-two-column-two-through-four {
+    background-color: hsl(200, 50%, 70%);
+    
+    grid-row: 2;
+    grid-column: 2 / span 3;
+    /* ^^ Shorthand version for: */
+    /* grid-column-start: 2;
+    grid-column-end: 5; */
+}
+
+#row-three-through-four-column-two{
+    background-color: hsl(170, 50%, 50%);
+    grid-row: 3 / span 2;
+    /* ^^ Shorthand version for: */
+    /* grid-row-start: 3;
+    grid-row-end: 5; */
+
+    grid-column: 2;
+}
+
+#row-three-through-four-column-three-through-four {
+    background-color: hsl(100, 50%, 90%);
+    grid-row: 3 / span 2;
+    grid-column: 3 / span 2;
+
+    display: grid;
+    grid-template-rows: 15vh 60vh;
+    grid-template-columns: 15vw 60vw;
+}
+
+#header {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+
+    display: grid;
+    
+    /* ^^ In order to use the following attributes - align-items, 
+    justify-content, align-self, and justify-self - we must declare a 
+    display of grid. We don't have to assign grid rows or columns, but 
+    we do have to declare a display of grid. */
+
+
+    /* align-items: end; */
+    /* align-items: start; */
+    /* align-items: center; */
+
+    /* justify-content: end; */
+    /* justify-content: start; */
+    /* justify-content: center; */
+}
+
+#header h1{
+    /* align-self: end; */
+    /* align-self: start; */
+    /* align-self: center; */
+    /* align-self: stretch; */
+    /* ^^ stretch causes an item to fill all of the available vertical space - 
+    we likely aren't going to */
+
+    /* justify-self: end; */
+    /* justify-self: start; */
+    /* justify-self: center; */
+}
+
+#sidebar {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: hsl(100, 50%, 60%)
+}
+
+#content {
+    grid-row: 2;
+    grid-column: 2;
+    background-color: hsl(100, 80%, 80%);
+    padding-top: 10px;
+
+    /* display: flex; */
+    /* Similar to grid, we have to declare the display as 'flex'
+    before we can use the following attributes (some of which have overlapping names
+    as grid attributes, and similar effects). */
+
+
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* flex-wrap: wrap; */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* flex-flow is a shorthand for both flex-direction and flex-wrap.
+    Direction is specified first, followed by wrap.*/
+
+    /* flex-flow: row wrap; */
+
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+     /* ^^  Note - some of our other styling (height, width on .doggo) are overwriting
+     "stretch" for align items */
+    /* align-items: baseline; */
+
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
+
+    /* gap: 10px; */
+    /* row-gap: 20px; */
+    /* column-gap: 15px; */
+
+    overflow: scroll;
+}
+
+.doggo {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+    /* align-self: center; */
+
+    /* Unlike grid, 'justify-self' is ignored in flexbox layouts. Instead,
+    you'll rely on using 'justify-content' on your parent element.*/
+}
