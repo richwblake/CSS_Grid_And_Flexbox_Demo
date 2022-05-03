@@ -29,6 +29,10 @@ When setting rows and columns, the left-most value will correspond with the top 
 
 ### Placing Elements Within a Grid
 
+Now that we've given our `body` tag a grid, we can place child elements of that `body` tag within its grid.
+
+Note: this will only work for child elements that are immediate children of our `body` tag. Trying to place elements that are nested within children of our `body` tag within our `body` tags grid will not work. In other words, in order for an element to be placed in a grid, its immediate parent element must be declared as a grid and given corresponding rows and columns.
+
 ## Assessment
 This is a challenge assessment to help you understand the concepts of CSS Flexbox and Grid. You will be asked to modify a simple CSS file that will be used to style a simple HTML file. Initially, both the flex and grid container divs are not quite right. They look something like this:
 
