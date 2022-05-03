@@ -57,7 +57,24 @@ But what if we want an element to span multiple rows and columns? Fortunately, C
 }
 ```
 
-This div corresponds with the light-blue rectangle that we see in our browser.
+This div corresponds with the light-blue rectangle that we see in our browser. As you can see, it spans multiple columns, stretching all the way to the right-hand border of our viewport. If we look at our styles, we see why - we've given this `div` a `grid-column` style of `2 / span 3;`. This is telling this `div` that it starts in `column 2` of our parent element's grid, and spans 3 columns in total (which takes us to the edge of our grid, since there are only 4 columns in our grid). This is shorthand for writing:
+
+```
+grid-column-start: 2;
+grid-column-end: 5;
+```
+
+Note that `grid-column-end` - along with `grid-row-end` - takes a value that is _not_ included in the number of columns spanned by your element (there is no column 5 in this instance). The above styling instructions would tell our element to start on `column 2` and span every columen _up to but not including_ `column 5`. Play around with it yourself to make sure you understand this concept.
+
+This same principle applies for rows. If we check out the styles we're giving our `row-three-through-four-column-two` div, we'll see such row stylings in action:
+
+```
+#row-three-through-four-column-two{
+    background-color: hsl(170, 50%, 50%);
+    grid-row: 3 / span 2;
+    grid-column: 2;
+}
+```
 
 ## Assessment
 This is a challenge assessment to help you understand the concepts of CSS Flexbox and Grid. You will be asked to modify a simple CSS file that will be used to style a simple HTML file. Initially, both the flex and grid container divs are not quite right. They look something like this:
