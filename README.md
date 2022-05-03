@@ -43,7 +43,20 @@ Once that's been set up, you can tell your element which row and which column it
 }
 ```
 
-Check out `basics.html` in your browser - this div corresponds with the orange rectangle you should be seeing in the upper left-hand corner of your screen.
+Check out `basics.html` in your browser - this div corresponds with the orange rectangle you should be seeing in the upper left-hand corner of your screen. It is `10vh` tall and `10vw` wide - the same height and width as the first row and column in the grid we've set on our `body` tag. Why is this?
+
+Well, if you look at our CSS styles, you'll see that we've given this div a style of `grid-row: 1;` and `grid-column: 1;`. This tells this div that it should position itself within the first row and first column of its parent container's grid. If we wanted it to display in a different row or column, we would simply change the number associated with `grid-row` or `grid-column` (but make sure that the number actually does correspond with a row or column in the parent element's grid).
+
+But what if we want an element to span multiple rows and columns? Fortunately, CSS makes that pretty easy. Let's take a look at where we're selecting our `row-two-column-two-through-four` `div` in our `basics.css` file. It should be receiving the following styling attributes:
+
+```
+#row-two-column-two-through-four {
+    background-color: hsl(200, 50%, 70%);
+    
+    grid-row: 2;
+    grid-column: 2 / span 3;
+}
+```
 
 ## Assessment
 This is a challenge assessment to help you understand the concepts of CSS Flexbox and Grid. You will be asked to modify a simple CSS file that will be used to style a simple HTML file. Initially, both the flex and grid container divs are not quite right. They look something like this:
