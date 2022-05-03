@@ -52,11 +52,12 @@ But what if we want an element to span multiple rows and columns? Fortunately, C
 ```
 #row-two-column-two-through-four {
     background-color: hsl(200, 50%, 70%);
-    
     grid-row: 2;
     grid-column: 2 / span 3;
 }
 ```
+
+This div corresponds with the light-blue rectangle that we see in our browser.
 
 ## Assessment
 This is a challenge assessment to help you understand the concepts of CSS Flexbox and Grid. You will be asked to modify a simple CSS file that will be used to style a simple HTML file. Initially, both the flex and grid container divs are not quite right. They look something like this:
