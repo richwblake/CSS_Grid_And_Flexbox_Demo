@@ -22,7 +22,9 @@ body {
 }
 ```
 
-Setting the `display` attribute to `grid` for our `body` allows us to divide our `body` into different rows and columns, which together make up a grid. We declare the different rows and columns in our grid using `grid-template-rows` and `grid-template-columns`. In the above example, we've given our `body` tag's grid four rows, one that is `10vh` tall, one that is `15vh` tall, another that is `20vh` tall, and a final one that is `55vh` tall (together, these add up to `100vh`, which corresponds with 100% of the height of our viewport).
+Setting the `display` attribute to `grid` for our `body` allows us to divide our `body` into different rows and columns, which together make up a grid. We declare the different rows and columns in our grid using `grid-template-rows` and `grid-template-columns`. In the above example, we've given our `body` tag's grid four rows, one that is `10vh` tall, one that is `15vh` tall, another that is `20vh` tall, and a final one that is `55vh` tall (together, these add up to `100vh`, which corresponds with 100% of the height of our viewport). We've done something similar for our columns, except their total width adds up to the total width of our viewport.
+
+When setting rows and columns, the left-most value will correspond with the top row and the left-most column, while the right-most value will correspond with the bottom row and the right-most column. The top row and and left-most column will be row `1` and column `1`. The row second from the top and the column second from the left will be row `2` and column `2`. This pattern continues as you create rows and columns.
 
 ## Assessment
 This is a challenge assessment to help you understand the concepts of CSS Flexbox and Grid. You will be asked to modify a simple CSS file that will be used to style a simple HTML file. Initially, both the flex and grid container divs are not quite right. They look something like this:
