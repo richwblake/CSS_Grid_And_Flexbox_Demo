@@ -64,15 +64,35 @@ grid-column-start: 2;
 grid-column-end: 5;
 ```
 
-Note that `grid-column-end` - along with `grid-row-end` - takes a value that is _not_ included in the number of columns spanned by your element (there is no column 5 in this instance). The above styling instructions would tell our element to start on `column 2` and span every columen _up to but not including_ `column 5`. Play around with it yourself to make sure you understand this concept.
+Note that `grid-column-end` - along with `grid-row-end` - takes a value that is _not_ included in the number of columns spanned by your element (there is no column 5 in this instance). The above styling instructions would tell our element to start on `column 2` and span every column _up to but not including_ `column 5`. Play around with it yourself to make sure you understand this concept.
 
-This same principle applies for rows. If we check out the styles we're giving our `row-three-through-four-column-two` div, we'll see such row stylings in action:
+This same principle applies for rows. If we check out the styles we're giving our `row-three-through-four-column-two` div, we'll see similar row stylings in action:
 
 ```
 #row-three-through-four-column-two{
     background-color: hsl(170, 50%, 50%);
     grid-row: 3 / span 2;
     grid-column: 2;
+}
+```
+
+### Grid Gap
+
+We can also give our grid gaps in between its rows and columns. Note that this _does change the overall width and height of our grid_. This means that if we have a grid whose width and height spans the width and height of the screen, adding gaps will make our grid larger than the width and height of our screen, which will necessitate scrolling to view the total webpage layout. This is generally not a good idea (we want user to scroll across specific portions of our webpage, rather than across our entire web page itself), so it's good to keep this in mind if you want to add gaps to your grid.
+
+Adding gaps is fairly straightforward. To add a gap between rows, we use the `row-gap` styling attribute and give it a value (say `20px`). For a gap between columns, we use `column-gap`. As a shorthand, we can just use the `gap` styling attribute. If we give it one value (`10px`), both rows and columns will have a gap of `10px`. If we give it two values (`10px 20px`) our rows will have a gap associated with the first value (`10px`) while our columns will have a gap associated with the second value (`20px`). Play around with this yourself to get a feel for it.
+
+Syntax:
+```
+body {
+    display: grid;
+    grid-template-rows: 10vh 15vh 20vh 55vh;
+    grid-template-columns: 10vw 15vw 30vw 45vw;
+    /* You do not need to include all of the gap stylings written below. This just serves as an example for each type of gap styling syntax. */
+    row-gap: 20px;
+    column-gap: 30px;
+    gap: 10px 20px;
+    gap: 20px;
 }
 ```
 
