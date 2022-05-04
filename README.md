@@ -180,6 +180,11 @@ Once you've applied those styles, your `#header` `div` should look something lik
 
 ![Screen Shot 2022-05-04 at 1 51 15 PM](https://user-images.githubusercontent.com/89106805/166823941-fcf151ed-0475-48a1-a2a8-4cc03ab9b157.png)
 
+In addition to `center` we can also use `start` and `end` in conjunction with `align-items` and `justify-content`. `start` corresponds with `top` and `left`, while `end` corresponds with `bottom` and `right`, respectively.
+
+#### Align-Self and Justify-Self
+
+
 
 ### Viewing Grids in Chrome Dev Tools
 
