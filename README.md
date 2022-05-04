@@ -155,7 +155,15 @@ There is no limit to how deeply you can nest your grids - whatever best meets th
 
 ### Justifying and Aligning Items
 
-One other incredibly handy feature that Grid gives us is the ability to align and justify items. For anybody who has struggled to center HTML elements within other elements, worry no more! Grid ma
+One other incredibly handy feature that Grid gives us is the ability to align and justify items. For anybody who has struggled to center HTML elements within other elements, worry no more! Grid makes this type of thing easy and straightforward. We'll be working with our `#header` `div` as well as the `h1` inside of our `#header`. If you look at our code in `basics.css` you should see that both are already being selected - each should also have commented out styling attributes within their styling instructions.
+
+Using Grid styling attributes, we'll be manipulating the position of our `h1` inside of our `#header`. You should be able to see these changes in our browser window as we make them (if you don't have an auto-reload on your browser every time you save changes in your files, make sure you're refreshing your browser window).
+
+The first thing we'll need to do is give our `#header` `div` a display of `grid` (there should be code you can comment in that does so). You _must_ give your parent element a display of Grid in order to use the following styling attributes. It doesn't need to have specific rows or columns, but it must be declared as a grid.
+
+#### Align-Items and Justify-Content
+
+
 
 ### Viewing Grids in Chrome Dev Tools
 
