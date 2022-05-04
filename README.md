@@ -163,7 +163,7 @@ The first thing we'll need to do is give our `#header` `div` a display of `grid`
 
 #### Align-Items and Justify-Content
 
-
+Let's imagine that we want our `h1` to be horizontally and veritcally centered in our `#header` `div`. We can give our `#header` `div` styling attributes that tells child elements how they should position themselves within the grid (or within their respective grid-rows and grid-columns). 
 
 ### Viewing Grids in Chrome Dev Tools
 
