@@ -163,7 +163,23 @@ The first thing we'll need to do is give our `#header` `div` a display of `grid`
 
 #### Align-Items and Justify-Content
 
-Let's imagine that we want our `h1` to be horizontally and veritcally centered in our `#header` `div`. We can give our `#header` `div` styling attributes that tells child elements how they should position themselves within the grid (or within their respective grid-rows and grid-columns). 
+Let's imagine that we want our `h1` to be horizontally and veritcally centered in our `#header` `div`. We can give our `#header` `div` styling attributes that tells child elements how they should position themselves within the grid (or within their respective grid-rows and grid-columns). To vertically position child elements, we're going to use the `align-items` attribute. To horizontally position child elements, we're going to use the `justify-content` styling attribute. Let's give our `#header` `div` both of those styling attributes and set their values to `center`:
+
+```
+#header {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+```
+
+Once you've applied those styles, your `#header` `div` should look something like this:
+
+![Screen Shot 2022-05-04 at 1 51 15 PM](https://user-images.githubusercontent.com/89106805/166823941-fcf151ed-0475-48a1-a2a8-4cc03ab9b157.png)
+
 
 ### Viewing Grids in Chrome Dev Tools
 
