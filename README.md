@@ -184,7 +184,9 @@ In addition to `center` we can also use `start` and `end` in conjunction with `a
 
 #### Align-Self and Justify-Self
 
+`align-items` and `justify-content` are great for control the position of _all_ child elements within a grid - but what if we want to just target one specific element and tell it how to position itself within its parent Grid.
 
+In these instances we can use the `align-self` and `justify-self` attributes on a child element of our grid container (in this example, we're going to be giving the `h1` ins
 
 ### Viewing Grids in Chrome Dev Tools
 
