@@ -99,7 +99,10 @@ body {
 
 As you'll no doubt soon encounter, you're going to need specific layout stylings for individual portions of your webpage, rather than just one basic layout styling for your entire webpage. Fortunately, we can have grids inside of other grids - one element that is supposed to serve as a grid container for other elements may itself have a place in a larger grid structure. Setting this up is actually pretty straightforward.
 
-First things first, let's visit our `basics.html` and comment in our `#header` `div`, our `#sidebar` `div` and our `#content` `div` (leave the `img` tags inside of our `#content` `div` commented out for now - you'll need to comment in both the opening `div` tag and the closing `div` tag for our `#content` `div`).
+First things first, let's visit our `basics.html` and comment in our `#header` `div`, our `#sidebar` `div` and our `#content` `div` (leave the `img` tags inside of our `#content` `div` commented out for now - you'll need to comment in both the opening `div` tag and the closing `div` tag for our `#content` `div`). Once you've done that, your webpage should look something like this: 
+
+![Screen Shot 2022-05-04 at 8 43 31 AM](https://user-images.githubusercontent.com/89106805/166719258-f216e5ac-4c2c-478b-b92f-8e4298dc2bf4.png)
+
 
 ### Justifying and Aligning Items
 
