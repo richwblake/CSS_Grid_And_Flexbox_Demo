@@ -103,6 +103,36 @@ First things first, let's visit our `basics.html` and comment in our `#header` `
 
 ![Screen Shot 2022-05-04 at 8 43 31 AM](https://user-images.githubusercontent.com/89106805/166719258-f216e5ac-4c2c-478b-b92f-8e4298dc2bf4.png)
 
+All of these `div` tags we've commented in are children of our `#row-three-through-four-column-three-through-four` `div`. If we check out our `basics.css` file, we'll see that we've given our `#row-three-through-four-column-three-through-four` `div` a Grd and all of its child elements a place within that Grid:
+
+```
+#row-three-through-four-column-three-through-four {
+    background-color: hsl(100, 50%, 90%);
+    grid-row: 3 / span 2;
+    grid-column: 3 / span 2;
+
+    display: grid;
+    grid-template-rows: 15vh 60vh;
+    grid-template-columns: 15vw 60vw;
+}
+
+#header {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+#sidebar {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: hsl(100, 50%, 60%)
+}
+
+#content {
+    grid-row: 2;
+    grid-column: 2;
+    background-color: hsl(100, 80%, 80%);
+}
+```
 
 ### Justifying and Aligning Items
 
