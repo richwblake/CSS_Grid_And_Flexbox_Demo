@@ -1,6 +1,6 @@
 # CSS Flexbox and Grid
 
-This application serves as a demonstration of Grid and Flexbox, two key CSS styling concepts that are essential for setting up webpage layouts. We'll be consulting `basics.html` and `basics.css`, which are in our `basics` folder, throughout this README - for more advanced examples, you can check out the files in the `flex` and `grid` folders. There is also an assessment at the end of this README - to complete that, you'll use the files in the `assessment` folder.
+This application serves as a basic demonstration of Grid and Flexbox, two key CSS styling concepts that are essential for setting up webpage layouts. We'll be consulting `basics.html` and `basics.css`, which are in our `basics` folder, throughout this README - for more advanced examples, you can check out the files in the `flex` and `grid` folders. There is also an assessment at the end of this README - to complete that, you'll use the files in the `assessment` folder.
 
 ## Grid
 
@@ -95,6 +95,17 @@ body {
     gap: 20px;
 }
 ```
+### Nested Grids
+
+As you'll no doubt soon encounter, you're going to need specific layout stylings for individual portions of your webpage, rather than just one basic layout styling for your entire webpage. Fortunately, we can have grids inside of other grids - one element that is supposed to serve as a grid container for other elements may itself have a place in a larger grid structure. Setting this up is actually pretty straightforward.
+
+First things first, let's visit our `basics.html` and comment in our `#header` `div`, our `#sidebar` `div` and our `#content` `div` (leave the `img` tags inside of our `#content` `div` commented out for now - you'll need to comment in both the opening `div` tag and the closing `div` tag for our `#content` `div`).
+
+### Justifying and Aligning Items
+
+One other incredibly handy feature that Grid gives us is the ability to align and justify items. For anybody who has struggled to center HTML elements within other elements, worry no more! Grid ma
+
+### Viewing Grids in Chrome Dev Tools
 
 ## Assessment
 This is a challenge assessment to help you understand the concepts of CSS Flexbox and Grid. You will be asked to modify a simple CSS file that will be used to style a simple HTML file. Initially, both the flex and grid container divs are not quite right. They look something like this:
