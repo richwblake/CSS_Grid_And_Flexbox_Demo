@@ -103,7 +103,7 @@ First things first, let's visit our `basics.html` and comment in our `#header` `
 
 ![Screen Shot 2022-05-04 at 8 43 31 AM](https://user-images.githubusercontent.com/89106805/166719258-f216e5ac-4c2c-478b-b92f-8e4298dc2bf4.png)
 
-All of these `div` tags we've commented in are children of our `#row-three-through-four-column-three-through-four` `div`. If we check out our `basics.css` file, we'll see that we've given our `#row-three-through-four-column-three-through-four` `div` a Grd and all of its child elements a place within that Grid:
+All of these `div` tags we've commented in are children of our `#row-three-through-four-column-three-through-four` `div`. If we check out our `basics.css` file, we'll see that we've given our `#row-three-through-four-column-three-through-four` `div` a Grid and all of its child elements a place within that Grid:
 
 ```
 #row-three-through-four-column-three-through-four {
@@ -133,6 +133,23 @@ All of these `div` tags we've commented in are children of our `#row-three-throu
     background-color: hsl(100, 80%, 80%);
 }
 ```
+
+You'll notice that, in addition to giving `#row-three-through-four-column-three-through-four` a Grid, we're first telling it where its supposed to display inside of its parent container:
+
+```
+grid-row: 3 / span 2;
+grid-column: 3 / span 2;
+```
+
+As its `id` describes, its positioned to span the 3rd and 4th row and the 3rd and 4th column in our parent grid. Once we've positioned it within our parent container, we can give it its own internal grid: 
+
+```
+display: grid;
+grid-template-rows: 15vh 60vh;
+grid-template-columns: 15vw 60vw;
+```
+
+Now, all of its child elements - `#header`, `#sidebar`, `#content` - will be able to reference this grid when determining their own position.
 
 ### Justifying and Aligning Items
 
