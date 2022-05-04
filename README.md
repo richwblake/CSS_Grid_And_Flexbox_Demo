@@ -151,6 +151,8 @@ grid-template-columns: 15vw 60vw;
 
 Now, all of its child elements - `#header`, `#sidebar`, `#content` - will be able to reference this grid when determining their own position.
 
+There is no limit to how deeply you can nest your grids - whatever best meets the needs of your individual use!
+
 ### Justifying and Aligning Items
 
 One other incredibly handy feature that Grid gives us is the ability to align and justify items. For anybody who has struggled to center HTML elements within other elements, worry no more! Grid ma
