@@ -251,7 +251,7 @@ As you can see, the elements that have a display of "grid" are marked with a gri
 
 ## Flexbox
 
-While Grid is an incredibly handy and useful tool for layouts, Flexbox is another essential styling tool for handling layouts. Most of the time, we'll use both styling attributes when setting up a single page. (Which is what we'll be doing here!). 
+While Grid is an incredibly handy and useful tool for layouts, Flexbox is also an essential styling technique to have in our toolkit. Most of the time, we'll use both styling attributes when setting up a single page. (Which is what we'll be doing here!). 
 
 Flexbox is a great option when you want something more, well, _flexible_ than a grid. When you want to control the layout of items (perhaps a set of images, cards, or other pieces of content) without placing them within a strict grid framework. Flexboxes are great in that they will also automatically flex and resize based on the width of the viewport on which they're being displayed. Items inside of Flexboxes (also known as flex items) will readjust their layout when a Flexbox resizes, although they'll keep following the same general principles.
 
@@ -272,6 +272,26 @@ Declaring a Flexbox is quite similar to declaring a Grid. You simply choose the 
     display: flex;
 }
 ```
+
+You should see an immediate effect - our webpage will now look like this: 
+
+![Screen Shot 2022-05-05 at 1 48 09 PM](https://user-images.githubusercontent.com/89106805/167023117-d8ab844c-e9f8-483f-b20e-639222f19f67.png)
+
+Yikes! All of our images are now displaying on a single row that goes off screen - that doesn't look like what we want! 
+
+Don't panic - this is just what happnes when we first declare a Flexbox. All of its child elements - or "Flex items" - will display inline. This is actually desired behavior; it allows us to display block level elements - like `div`s - side by side, instead of on a whole new line. We can use Flexbox's many styling attributes to further control the layout.
+
+### Flex Direction
+
+We can give our Flexbox a `flex-direction` attribute, which will instruct it how to organize its Flex itesm.. By default, each Flexbox has a `flex-direction` of `row`. We can also change our flex-direction to `row-reverse`, which switches the order in which our elements display; `column`, which organizes our elements into a column; and `column-reverse`, which also organizes our elements into a column, but switches the order in which elements are displayed. Here's what our webpage would look like if we gave our `#content` `div` a `flex-direction` of `column`:
+
+![Screen Shot 2022-05-05 at 1 59 02 PM](https://user-images.githubusercontent.com/89106805/167024585-77e622d3-e938-4160-b9b6-0bc55ec86b77.png)
+
+### Flex Wrap
+
+Ok, so we can change the direction in which our Flexbox organizes its Flex items. But we still have everything displaying in one long row or column. How do we change that?
+
+Flexbox makes it pretty easy - it give us the `flex-wrap` property. By default each Flexbox is assigned a `flex-wrap` of `no-wrap`.
 
 ## Assessment
 This is a challenge assessment to help you understand the concepts of CSS Flexbox and Grid. You will be asked to modify a simple CSS file that will be used to style a simple HTML file. Initially, both the flex and grid container divs are not quite right. They look something like this:
