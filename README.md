@@ -201,6 +201,22 @@ Let's add that to our `#header` `div` styling instructions (we can remove our `a
 
 ![Screen Shot 2022-05-05 at 9 17 43 AM](https://user-images.githubusercontent.com/89106805/166967700-a27f2499-1125-4f92-add5-9f0fbdcacd5f.png)
 
+Let's test this out for `justify-content` as well. First things first, let's make sure our `h1` tags are displayed horizontally adjacent to each other. We can do this by telling them that they both belong to the same row (which in this case is row `1`, since we haven't actually given our Grid any specific rows).
+
+```
+#header h1 {
+  grid-row: 1;
+}
+```
+Our `#header` should now look like this:
+
+![Screen Shot 2022-05-05 at 9 20 50 AM](https://user-images.githubusercontent.com/89106805/166968432-a4971951-a178-4d39-bf2d-ed37c6631788.png)
+
+This is similar to the issue we were facing when we just used `align-items` instead of `align-content`. Let's add `justify-content: center;` as a styling instruction to our `#header` `div. Once we've added it, our `#header` `div` should look like this:
+
+![Screen Shot 2022-05-05 at 9 24 04 AM](https://user-images.githubusercontent.com/89106805/166968719-6c7e732e-cf19-48ea-8a60-132b582ff199.png)
+
+
 
 #### Align-Self and Justify-Self
 
