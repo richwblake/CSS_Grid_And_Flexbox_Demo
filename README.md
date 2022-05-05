@@ -161,9 +161,10 @@ Using Grid styling attributes, we'll be manipulating the position of our `h1` in
 
 The first thing we'll need to do is give our `#header` `div` a display of `grid` (there should be code you can comment in that does so). You _must_ give your parent element a display of Grid in order to use the following styling attributes. It doesn't need to have specific rows or columns, but it must be declared as a grid.
 
-#### Align-Items and Justify-Content
+#### Align and Justify Items and Content
 
-Let's imagine that we want our `h1` to be horizontally and veritcally centered in our `#header` `div`. We can give our `#header` `div` styling attributes that tells child elements how they should position themselves within the grid (or within their respective grid-rows and grid-columns). To vertically position child elements, we're going to use the `align-items` attribute. To horizontally position child elements, we're going to use the `justify-content` styling attribute. Let's give our `#header` `div` both of those styling attributes and set their values to `center`:
+##### Items
+Let's imagine that we want our `h1` to be horizontally and veritcally centered in our `#header` `div`. We can give our `#header` `div` styling attributes that tells child elements how they should position themselves within the grid (or within their respective grid-rows and grid-columns). To vertically position child elements, we're going to use the `align-items` attribute. To horizontally position child elements, we're going to use the `justify-items` styling attribute. Let's give our `#header` `div` both of those styling attributes and set their values to `center`:
 
 ```
 #header {
@@ -172,7 +173,7 @@ Let's imagine that we want our `h1` to be horizontally and veritcally centered i
   
   display: grid;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
 }
 ```
 
@@ -180,13 +181,24 @@ Once you've applied those styles, your `#header` `div` should look something lik
 
 ![Screen Shot 2022-05-04 at 1 51 15 PM](https://user-images.githubusercontent.com/89106805/166823941-fcf151ed-0475-48a1-a2a8-4cc03ab9b157.png)
 
-In addition to `center` we can also use `start` and `end` in conjunction with `align-items` and `justify-content`. `start` corresponds with `top` and `left`, while `end` corresponds with `bottom` and `right`, respectively.
+In addition to `center` we can also use `start` and `end` in conjunction with `align-items` and `justify-items`. `start` corresponds with `top` and `left`, while `end` corresponds with `bottom` and `right`, respectively.
+
+##### Content
 
 #### Align-Self and Justify-Self
 
 `align-items` and `justify-content` are great for control the position of _all_ child elements within a grid - but what if we want to just target one specific element and tell it how to position itself within its parent Grid.
 
-In these instances we can use the `align-self` and `justify-self` attributes on a child element of our grid container (in this example, we're going to be giving the `h1` ins
+In these instances we can use the `align-self` and `justify-self` attributes on a child element of our grid container (in this example, we're going to be giving the `h1` inside our `#header` `div` these styles).
+
+`align-self` is used for vertical alignment, while `justify-self` is used for horizontal alignment. Both of these styling attributes can _override_ `align-items` and `justify-content` that has been set on the parent element. This allows you to set a general alignment for your grid - maybe you want things to default to center - while still being able to manipulate the display of specific elements. Let's add these styles to our `h1` inside of our `#header`:
+
+```
+#header h1 {
+  align-self: end;
+  justify-self: end;
+}
+```
 
 ### Viewing Grids in Chrome Dev Tools
 
