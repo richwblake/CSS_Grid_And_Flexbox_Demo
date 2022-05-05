@@ -251,7 +251,14 @@ As you can see, the elements that have a display of "grid" are marked with a gri
 
 ## Flexbox
 
-While Grid is an incredibly handy and useful tool for layouts, Flexbox is another essential styling tool for handling layouts. Most
+While Grid is an incredibly handy and useful tool for layouts, Flexbox is another essential styling tool for handling layouts. Most of the time, we'll use both styling attributes when setting up a single page. (Which is what we'll be doing here!). 
+
+Flexbox is a great option when you want something more, well, _flexible_ than a grid. When you want to control the layout of items (perhaps a set of images, cards, or other pieces of content) without placing them within a strict grid framework. Flexboxes are great in that they will also automatically flex and resize based on the width of the viewport on which they're being displayed. Items inside of Flexboxes (also known as flex items) will readjust their layout when a Flexbox resizes, although they'll keep following the same general principles.
+
+We'll be turning our `#content` `div` into a Flexbox in order to control the display of the `img` tags we've included inside of it. First things first, let's comment in those image tags. Once they're commented in, you should see them showing up on our webpage:
+
+![Screen Shot 2022-05-05 at 12 52 29 PM](https://user-images.githubusercontent.com/89106805/167014867-b80cbac2-f560-4fa2-ae84-ab496302bbe4.png)
+
 
 ## Assessment
 This is a challenge assessment to help you understand the concepts of CSS Flexbox and Grid. You will be asked to modify a simple CSS file that will be used to style a simple HTML file. Initially, both the flex and grid container divs are not quite right. They look something like this:
