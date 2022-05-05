@@ -191,6 +191,15 @@ Let's add another `h1` tag to our `#header` `div` in our `basics.html` file (we 
 
 ![Screen Shot 2022-05-05 at 9 13 24 AM](https://user-images.githubusercontent.com/89106805/166966859-fc9eda46-afef-4c23-842b-ad30fa368ed7.png)
 
+Our items are center aligned, but there's a substantial gap between them. What if we wanted them to bunch together at the center, separated only by the margin that we've given them (they currently have no margin)? That's where we can use `align-content`:
+
+```
+align-content: center;
+```
+
+Let's add that to our `#header` `div` styling instructions (we can remove our `align-items` styling instructions, although `align-content` will automatically override it). Our `#header` `div` should now look like this:
+
+![Screen Shot 2022-05-05 at 9 17 43 AM](https://user-images.githubusercontent.com/89106805/166967700-a27f2499-1125-4f92-add5-9f0fbdcacd5f.png)
 
 
 #### Align-Self and Justify-Self
