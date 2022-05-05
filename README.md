@@ -185,6 +185,8 @@ In addition to `center` we can also use `start` and `end` in conjunction with `a
 
 ##### Content
 
+There are actually two separate commands for handling this type of display manipulation in Grid - in addition to `align-items` and `justify-items` we have the styling attributes `align-content` and `justify-content`. While these two attributes may seem similar on the surface, they have a significantly different result. Moreover, `aligning` or `justifying` `content` will override `aligning` or `justifying` `items` - it also can't be overridden by `aligning` or `justifying` `self`, which is what we'll discuss in the next section.
+
 #### Align-Self and Justify-Self
 
 `align-items` and `justify-content` are great for control the position of _all_ child elements within a grid - but what if we want to just target one specific element and tell it how to position itself within its parent Grid.
