@@ -153,7 +153,7 @@ Now, all of its child elements - `#header`, `#sidebar`, `#content` - will be abl
 
 There is no limit to how deeply you can nest your grids - whatever best meets the needs of your individual use!
 
-### Justifying and Aligning Items
+### Justifying and Aligning Elements
 
 One other incredibly handy feature that Grid gives us is the ability to align and justify items. For anybody who has struggled to center HTML elements within other elements, worry no more! Grid makes this type of thing easy and straightforward. We'll be working with our `#header` `div` as well as the `h1` inside of our `#header`. If you look at our code in `basics.css` you should see that both are already being selected - each should also have commented out styling attributes within their styling instructions.
 
