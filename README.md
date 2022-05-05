@@ -259,6 +259,19 @@ We'll be turning our `#content` `div` into a Flexbox in order to control the dis
 
 ![Screen Shot 2022-05-05 at 12 52 29 PM](https://user-images.githubusercontent.com/89106805/167014867-b80cbac2-f560-4fa2-ae84-ab496302bbe4.png)
 
+### Declaring a Flexbox
+
+Declaring a Flexbox is quite similar to declaring a Grid. You simply choose the parent element that you want to become a Flexbox (in this case, our `#content` `div`) and give it a `display` of `flex`:
+
+```
+#content {
+    grid-row: 2;
+    grid-column: 2;
+    background-color: hsl(100, 80%, 80%);
+
+    display: flex;
+}
+```
 
 ## Assessment
 This is a challenge assessment to help you understand the concepts of CSS Flexbox and Grid. You will be asked to modify a simple CSS file that will be used to style a simple HTML file. Initially, both the flex and grid container divs are not quite right. They look something like this:
