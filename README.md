@@ -241,6 +241,15 @@ As expected, our `align-self` and `justify-self` attributes we've given our `#en
 
 ### Viewing Grids in Chrome Dev Tools
 
+Any element we give a display of Grid will have that reflected in our Chrome Dev tools. If we check out the elements tab in our dev tools, we should see something like this:
+
+![Screen Shot 2022-05-05 at 11 36 25 AM](https://user-images.githubusercontent.com/89106805/166997836-fd3733eb-1a18-4d92-a06b-616ebad69995.png)
+
+As you can see, the elements that have a display of "grid" are marked with a grid button in our dev tools. If we click on that button (let's click on the one next to our `body` tag), we'll see that grid overlayed on our webpage: 
+
+![Screen Shot 2022-05-05 at 11 40 03 AM](https://user-images.githubusercontent.com/89106805/166999133-a9df5e39-ebb0-4d86-80fc-dbdc85758af1.png)
+
+
 ## Assessment
 This is a challenge assessment to help you understand the concepts of CSS Flexbox and Grid. You will be asked to modify a simple CSS file that will be used to style a simple HTML file. Initially, both the flex and grid container divs are not quite right. They look something like this:
 
