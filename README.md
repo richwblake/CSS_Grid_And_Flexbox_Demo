@@ -212,7 +212,7 @@ Our `#header` should now look like this:
 
 ![Screen Shot 2022-05-05 at 9 20 50 AM](https://user-images.githubusercontent.com/89106805/166968432-a4971951-a178-4d39-bf2d-ed37c6631788.png)
 
-This is similar to the issue we were facing when we just used `align-items` instead of `align-content`. Let's add `justify-content: center;` as a styling instruction to our `#header` `div. Once we've added it, our `#header` `div` should look like this:
+This is similar to the issue we were facing when we just used `align-items` instead of `align-content`. Let's add `justify-content: center;` as a styling instruction to our `#header` `div`. Once we've added it, our `#header` `div` should look like this:
 
 ![Screen Shot 2022-05-05 at 9 24 04 AM](https://user-images.githubusercontent.com/89106805/166968719-6c7e732e-cf19-48ea-8a60-132b582ff199.png)
 
