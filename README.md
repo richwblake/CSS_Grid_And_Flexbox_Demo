@@ -220,18 +220,24 @@ This is similar to the issue we were facing when we just used `align-items` inst
 
 #### Align-Self and Justify-Self
 
-`align-items` and `justify-content` are great for control the position of _all_ child elements within a grid - but what if we want to just target one specific element and tell it how to position itself within its parent Grid.
+`align-items`, `align-content`, `justify-items`, and `justify-content` are great for controlling the position of _all_ child elements within a grid - but what if we want to just target one specific element and tell it how to position itself within its parent Grid?
 
 In these instances we can use the `align-self` and `justify-self` attributes on a child element of our grid container (in this example, we're going to be giving the `h1` inside our `#header` `div` these styles).
 
-`align-self` is used for vertical alignment, while `justify-self` is used for horizontal alignment. Both of these styling attributes can _override_ `align-items` and `justify-content` that has been set on the parent element. This allows you to set a general alignment for your grid - maybe you want things to default to center - while still being able to manipulate the display of specific elements. Let's add these styles to our `h1` inside of our `#header`:
+`align-self` is used for vertical alignment, while `justify-self` is used for horizontal alignment. Both of these styling attributes can override `align-items` and `justify-itmes` that has been set on the parent element. They _cannot_, however, override `align-content` and `justify-content. Let's give one of our `h1` elements an `id` of `#end-header`, comment out our `align-content` and `justify-content` styles on our parent Grid, and give these styles to our to our specific `end-header` div:
 
 ```
-#header h1 {
+#header #end-header{
   align-self: end;
   justify-self: end;
 }
 ```
+
+We should now have something that looks like this (if you've been changing other styling elements, you might have something a little different):
+
+![Screen Shot 2022-05-05 at 11 23 21 AM](https://user-images.githubusercontent.com/89106805/166990962-a2908269-4e97-4a1e-baa5-0294777dd023.png)
+
+As expected, our `align-self` and `justify-self` attributes we've given our `#end-header` are overriding `align-items` and `justify-items` and giving our `#end-header` a new position. If we comment back in our `align-content` and `justify-content` instructions on our `#header` `div`, we'll see that our `align-self` and `justify-self` properties no longer apply, since `align-content` and `justify-content` take precedence.
 
 ### Viewing Grids in Chrome Dev Tools
 
