@@ -249,6 +249,9 @@ As you can see, the elements that have a display of "grid" are marked with a gri
 
 ![Screen Shot 2022-05-05 at 11 40 03 AM](https://user-images.githubusercontent.com/89106805/166999133-a9df5e39-ebb0-4d86-80fc-dbdc85758af1.png)
 
+## Flexbox
+
+While Grid is an incredibly handy and useful tool for layouts, Flexbox is another essential styling tool for handling layouts. Most
 
 ## Assessment
 This is a challenge assessment to help you understand the concepts of CSS Flexbox and Grid. You will be asked to modify a simple CSS file that will be used to style a simple HTML file. Initially, both the flex and grid container divs are not quite right. They look something like this:
