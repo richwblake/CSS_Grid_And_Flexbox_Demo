@@ -187,6 +187,12 @@ In addition to `center` we can also use `start` and `end` in conjunction with `a
 
 There are actually two separate commands for handling this type of display manipulation in Grid - in addition to `align-items` and `justify-items` we have the styling attributes `align-content` and `justify-content`. While these two attributes may seem similar on the surface, they have a significantly different result. Moreover, `aligning` or `justifying` `content` will override `aligning` or `justifying` `items` - it also can't be overridden by `aligning` or `justifying` `self`, which is what we'll discuss in the next section.
 
+Let's add another `h1` tag to our `#header` `div` in our `basics.html` file (we can just copy paste the existing `h1` tag). With the styling attributes we currently have, our `#header` `div` should look like this:
+
+![Screen Shot 2022-05-05 at 9 13 24 AM](https://user-images.githubusercontent.com/89106805/166966859-fc9eda46-afef-4c23-842b-ad30fa368ed7.png)
+
+
+
 #### Align-Self and Justify-Self
 
 `align-items` and `justify-content` are great for control the position of _all_ child elements within a grid - but what if we want to just target one specific element and tell it how to position itself within its parent Grid.
