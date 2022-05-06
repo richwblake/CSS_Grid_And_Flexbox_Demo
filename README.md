@@ -351,6 +351,28 @@ You should see something like this:
 
 ![Screen Shot 2022-05-06 at 12 06 31 PM](https://user-images.githubusercontent.com/89106805/167202105-95efd164-fa29-4475-813c-e4f0d2df33b9.png)
 
+## Conclusion
+
+And that's it for Flexbox and Grid! I want to give my page some final stylings to make sure it's in good shape. I'm going to remove that 'align-self' property from `.doggo`, and give `#content` the following styles to produce my final desired effect:
+
+```
+#content {
+    grid-row: 2;
+    grid-column: 2;
+    background-color: hsl(100, 80%, 80%);
+    padding-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 10px;
+}
+```
+
+My final page should look like this:
+
+![Screen Shot 2022-05-06 at 12 10 27 PM](https://user-images.githubusercontent.com/89106805/167202700-2e250c3e-436d-41c2-badb-31ef7bd8d07a.png)
+
 
 ## Assessment
 This is a challenge assessment to help you understand the concepts of CSS Flexbox and Grid. You will be asked to modify a simple CSS file that will be used to style a simple HTML file. Initially, both the flex and grid container divs are not quite right. They look something like this:
