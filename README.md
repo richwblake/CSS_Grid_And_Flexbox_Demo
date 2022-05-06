@@ -315,6 +315,42 @@ The styles above will give our Flexbox a gap of `20px` between its rows and `10p
 
 ![Screen Shot 2022-05-06 at 11 56 03 AM](https://user-images.githubusercontent.com/89106805/167200771-cef0d770-8754-477d-8c35-7178667bbf7d.png)
 
+### Justifying and Aligning
+
+The principles for justifying and aligning Flex items within a flexbox is very similar to Grid - you can use `justify-content`, `align-items`, and `align-content`. However, there is no `justify-items` for Flexbox. (There is also no `justify-self` property for Flex items). 
+
+Additionally, instead of using `start` or `end` to tell items to position themselves at the top or bottom / left or right in a container, we use `flex-start` and `flex-end`. So, if we wanted our Flex items to horizontally position themselves toward the right of our Flex container, we would write:
+
+```
+justify-content: flex-end;
+```
+
+Which would result in a display like this:
+
+![Screen Shot 2022-05-06 at 12 02 26 PM](https://user-images.githubusercontent.com/89106805/167201604-8eb227a5-68e9-405d-936f-dee2554abe9e.png)
+
+
+We also have some other styling attributes, like `space-between`, `space-around`, and `space-evenly`. Try playing around with each of these to see what effects they produce.
+
+#### Align-self
+
+As mentioned, there is no `justify-self` property in Flexbox. However, there is still `align-self`, which allows us to override `align-items` (but not `align-content`). We apply `align-self` on Flex items themselves, as opposed to on the parent Flexbox container.
+
+Let's give our `.doggo` styles an `align-self` property of `flex-end` (make sure there are no conflicting `align-content` instructions on the parent Flexbox).
+
+```
+.doggo {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    align-self: flex-end;
+}
+```
+
+You should see something like this:
+
+![Screen Shot 2022-05-06 at 12 06 31 PM](https://user-images.githubusercontent.com/89106805/167202105-95efd164-fa29-4475-813c-e4f0d2df33b9.png)
+
 
 ## Assessment
 This is a challenge assessment to help you understand the concepts of CSS Flexbox and Grid. You will be asked to modify a simple CSS file that will be used to style a simple HTML file. Initially, both the flex and grid container divs are not quite right. They look something like this:
