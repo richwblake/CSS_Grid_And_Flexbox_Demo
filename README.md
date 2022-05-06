@@ -291,7 +291,30 @@ We can give our Flexbox a `flex-direction` attribute, which will instruct it how
 
 Ok, so we can change the direction in which our Flexbox organizes its Flex items. But we still have everything displaying in one long row or column. How do we change that?
 
-Flexbox makes it pretty easy - it give us the `flex-wrap` property. By default each Flexbox is assigned a `flex-wrap` of `no-wrap`.
+Flexbox makes it pretty easy - it give us the `flex-wrap` property. By default each Flexbox is assigned a `flex-wrap` of `no-wrap`. This results in a display similar to what we're currently seeing - either one long row or one long column, depending on the `flex-direction` that we've set. But, we can tell our Flex items to wrap around into new rows and columns by giving our `flex-wrap` attribute a style of `wrap`. First, let's revert our `flex-direction` back to a `row`. Next, let's apply these styles to our `#content` `div`:
+
+```
+flex-wrap: wrap;
+```
+
+Now, we should be seeing something like this: 
+
+![Screen Shot 2022-05-06 at 11 43 54 AM](https://user-images.githubusercontent.com/89106805/167199154-911a6a34-c4c7-4996-99bd-8498616c70fa.png)
+
+Great! Our content is now wrapping around to create a new row instead of overflowing off the side of our screen.
+
+### Flex gap
+
+Like Grid, Flex allows us to set a gap between different Flex items. We can do this using the `row-gap`, `column-gap`, and `gap` properties. `row-gap` sets the gap for rows, `column-gap` sets the gap for columns, and `gap` can be used as a shorthand to specify both. We can pass `gap` either one or two values - passing it one value will set the same gap for rows and columns alike. Passing two values will set the row gap based off the first value and the column gap based off the second value.
+
+```
+gap: 20px 10px;
+```
+
+The styles above will give our Flexbox a gap of `20px` between its rows and `10px` between its columns. Note that this does not affect the distance between the edge of your container and your flex-items. For that, you will likely use `padding` or `justify` or `align` your Flex items.
+
+![Screen Shot 2022-05-06 at 11 56 03 AM](https://user-images.githubusercontent.com/89106805/167200771-cef0d770-8754-477d-8c35-7178667bbf7d.png)
+
 
 ## Assessment
 This is a challenge assessment to help you understand the concepts of CSS Flexbox and Grid. You will be asked to modify a simple CSS file that will be used to style a simple HTML file. Initially, both the flex and grid container divs are not quite right. They look something like this:
