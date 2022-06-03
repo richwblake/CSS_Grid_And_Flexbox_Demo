@@ -249,6 +249,12 @@ As you can see, the elements that have a display of "grid" are marked with a gri
 
 ![Screen Shot 2022-05-05 at 11 40 03 AM](https://user-images.githubusercontent.com/89106805/166999133-a9df5e39-ebb0-4d86-80fc-dbdc85758af1.png)
 
+### Summary
+
+Here's a great image encapsulating the different way positional grid commands effect the layout of your webpage: 
+
+![CSS Grid, summarized in one image](https://user-images.githubusercontent.com/89106805/171925778-a171e2b7-d2d8-4987-be89-55156926d840.jpeg)
+
 ## Flexbox
 
 While Grid is an incredibly handy and useful tool for layouts, Flexbox is also an essential styling technique to have in our toolkit. Most of the time, we'll use both styling attributes when setting up a single page. (Which is what we'll be doing here!). 
