@@ -257,9 +257,9 @@ Here's a great image encapsulating the different way positional grid commands ef
 
 ## Flexbox
 
-While Grid is an incredibly handy and useful tool for layouts, Flexbox is also an essential styling technique to have in our toolkit. Most of the time, we'll use both styling attributes when setting up a single page. (Which is what we'll be doing here!). 
+While Grid is an incredibly handy and useful tool for layouts, Flexbox is also an essential styling technique to have in our toolkit. Most of the time, we'll use both styling attributes when setting up a single page. (Which is what we'll be doing here!) 
 
-Flexbox is a great option when you want something more, well, _flexible_ than a grid. When you want to control the layout of items (perhaps a set of images, cards, or other pieces of content) without placing them within a strict grid framework. Flexboxes are great in that they will also automatically flex and resize based on the width of the viewport on which they're being displayed. Items inside of Flexboxes (also known as flex items) will readjust their layout when a Flexbox resizes, although they'll keep following the same general principles.
+Flexbox is a great option when you want something more, well, _flexible_ than a grid - i.e. when you want to control the layout of items (perhaps a set of images, cards, or other pieces of content) without placing them within a strict grid framework. Flexboxes are great in that they will also automatically flex and resize based on the width of the viewport on which they're being displayed. Items inside of Flexboxes (also known as flex items) will readjust their layout when a Flexbox resizes, although they'll keep following the same general principles.
 
 We'll be turning our `#content` `div` into a Flexbox in order to control the display of the `img` tags we've included inside of it. First things first, let's comment in those image tags. Once they're commented in, you should see them showing up on our webpage:
 
