@@ -251,7 +251,7 @@ As you can see, the elements that have a display of "grid" are marked with a gri
 
 ### Summary
 
-Here's a great image encapsulating the different way positional grid commands effect the layout of your webpage: 
+Here's a great image encapsulating the different way positional grid commands affect the layout of your webpage: 
 
 ![CSS Grid, summarized in one image](https://user-images.githubusercontent.com/89106805/171925778-a171e2b7-d2d8-4987-be89-55156926d840.jpeg)
 
