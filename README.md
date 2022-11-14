@@ -31,7 +31,7 @@ When setting rows and columns, the left-most value will correspond with the top 
 
 Now that we've given our `body` tag a grid, we can place child elements of that `body` tag within its grid.
 
-Note: this will only work for child elements that are immediate children of our `body` tag. Trying to place elements that are nested within children of our `body` tag within our `body` tags grid will not work. In other words, in order for an element to be placed in a grid, its immediate parent element must be declared as a grid and given rows and columns.
+Note: this will only work for child elements that are immediate children of our `body` tag. Trying to place elements that are nested within children of our `body` tag within our `body` tag's grid will not work. In other words, in order for an element to be placed in a grid, its immediate parent element must be declared as a grid and given rows and columns.
 
 Once that's been set up, you can tell your element which row and which column it's supposed to belong to in its parent element's grid. Let's take a look at our `basics.css` file. Find the selector that is selecting the `div` with the `id` `row-one-column-one`. It should have the following styles applying to it:
 
