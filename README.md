@@ -289,7 +289,7 @@ Don't panic - this is just what happnes when we first declare a Flexbox. All of 
 
 ### Flex Direction
 
-We can give our Flexbox a `flex-direction` attribute, which will instruct it how to organize its Flex itesm.. By default, each Flexbox has a `flex-direction` of `row`. We can also change our flex-direction to `row-reverse`, which switches the order in which our elements display; `column`, which organizes our elements into a column; and `column-reverse`, which also organizes our elements into a column, but switches the order in which elements are displayed. Here's what our webpage would look like if we gave our `#content` `div` a `flex-direction` of `column`:
+We can give our Flexbox a `flex-direction` attribute, which will instruct it how to organize its Flex items. By default, each Flexbox has a `flex-direction` of `row`. We can also change our flex-direction to `row-reverse`, which switches the order in which our elements display; `column`, which organizes our elements into a column; and `column-reverse`, which also organizes our elements into a column, but switches the order in which elements are displayed. Here's what our webpage would look like if we gave our `#content` `div` a `flex-direction` of `column`:
 
 ![Screen Shot 2022-05-05 at 1 59 02 PM](https://user-images.githubusercontent.com/89106805/167024585-77e622d3-e938-4160-b9b6-0bc55ec86b77.png)
 
