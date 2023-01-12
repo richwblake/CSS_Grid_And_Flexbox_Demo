@@ -11,7 +11,7 @@ Let's open up `basics.html` in our browser and take a look at it. You should see
 
 ![Screen Shot 2022-05-03 at 1 17 54 PM](https://user-images.githubusercontent.com/89106805/166559090-9124419d-b558-4965-b280-87cebd5b2dc6.png)
 
-What do we have here? Well, it's a grid of many-colored rectangles (albeit an uneven grid). If you look in our `body.html` file, you should see several `divs` nested inside of our `body` tag, with `ids` like `"row-one-column-one"`. Each of these `divs` corresponds with one of the colored rectangles in the image above. We've given each of them a specific place in a grid that we've defined on out `body` tag.
+What do we have here? Well, it's a grid of many-colored rectangles (albeit an uneven grid). If you look in our `body.html` file, you should see several `divs` nested inside of our `body` tag, with `ids` like `"row-one-column-one"`. Each of these `divs` corresponds with one of the colored rectangles in the image above. We've given each of them a specific place in a grid that we've defined on our `body` tag.
 
 If you look at `basics.css`, you'll see something similar to the following code:
 
